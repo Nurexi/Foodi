@@ -1,0 +1,1987 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Foodi - Premium restaurant experience with exquisite cuisine, exceptional service, and unforgettable dining moments. Book your table today!">
+    <meta name="keywords" content="restaurant, fine dining, gourmet food, reservations, premium cuisine, chef specials">
+    <meta name="author" content="Foodi Restaurant">
+    <meta property="og:title" content="Foodi - Premium Restaurant Experience">
+    <meta property="og:description" content="Savor the artistry where every dish is a culinary masterpiece">
+    <meta property="og:image" content="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Classic%20Spaghetti%20and%20Meatballs%20Recipe.jpg-mP7Md4mDGwzcNRUgTUIX5UsiV5FFxN.jpeg">
+    <meta property="og:url" content="https://foodi-restaurant.com">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <title>Foodi - Premium Restaurant Experience | Fine Dining & Gourmet Cuisine</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 0 100'><text y='.9em' font-size='90'>🍽️</text></svg>">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Preload critical images for performance -->
+    <link rel="preload" as="image" href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Classic%20Spaghetti%20and%20Meatballs%20Recipe.jpg-mP7Md4mDGwzcNRUgTUIX5UsiV5FFxN.jpeg" media="(min-width: 768px)">
+    <link rel="preload" as="image" href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Classic%20Spaghetti%20and%20Meatballs%20Recipe.jpg-mP7Md4mDGwzcNRUgTUIX5UsiV5FFxN.jpeg" media="(max-width: 767px)">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <h1>FOODI</h1>
+                <div class="loading-utensils">
+                    <i class="fas fa-utensils"></i>
+                </div>
+            </div>
+            <div class="loading-line"></div>
+            <p class="loading-text">Preparing your culinary journey...</p>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>FOODI</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#reservation" class="nav-link nav-cta">Reserve Table</a></li>
+                <li>
+                     <a href="cart.html" class="cart-icon-link" id="cart-icon-link">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-badge" id="cart-badge">0</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-background parallax-bg" data-speed="0.5"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-particles" id="hero-particles"></div>
+        
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+            <span class="hero-badge"> </span>
+            <h1 class="hero-title">
+                <span class="title-line">Welcome to</span>
+                <span class="title-line">Moments of</span>
+                <span class="title-line highlight">Fine Dinings</span>
+            </h1>
+            <p class="hero-subtitle">Where Every Ingredient is Chosen with Care Cooked with Soul and Served with Pride</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" id="order-now-btn">
+                    <span>Order Now</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <button class="btn btn-secondary" id="watch-video-btn">
+                    <i class="fas fa-play"></i>
+                    <span>Watch Video</span>
+                </button>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Expert Chefs</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">18k+</span>
+                    <span class="stat-label">Happy Customers</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-image" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="300">
+            <div class="hero-img-container">
+                <img src="Easy Chicken Chow Mein _ How To Make In Easiest Ways!.jpg" 
+                     alt="Classic spaghetti and meatballs with rich tomato sauce, fresh basil, and Parmesan cheese served in a cast iron skillet"
+                     class="hero-main-img"
+                     loading="eager"
+                     width="600"
+                     height="600">
+            </div>
+        </div>
+        
+        <div class="hero-scroll">
+            <a href="#about" class="scroll-indicator">
+                <span>SCROLL</span>
+                <div class="scroll-line"></div>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">OUR STORY & SERVICES</span>
+                <h2 class="section-title">Our Culinary Journey<br>And Services</h2>
+                <p class="section-description">Foodi was born from a dream  to turn every meal into a meaningful experience. Rooted in tradition and guided by innovation we serve with heart craft with care and create flavors that linger as memories.</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right" data-aos-duration="800">
+                    <div class="about-image" style="height: 100%; min-height: 450px; display: flex; align-items: center; justify-content: center;">
+                        <img src="shef.jpg" alt="Professional chef cooking with passion and expertise" loading="lazy" style="height: 100%; width: auto; max-height: 600px; object-fit: cover; border-radius: 1rem;" width="600" height="600">
+                        <div class="experience-badge">
+                            <span class="badge-number">15+</span>
+                            <span class="badge-text">Years of Excellence</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="services-grid" data-aos="fade-left" data-aos-duration="800">
+                    <div class="service-card glass-card" data-tilt>
+                        <div class="service-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>CATERING</h3>
+                        <p>Delight your guests with our special occasion</p>
+                        
+                    </div>
+                    
+                    <div class="service-card glass-card" data-tilt>
+                        <div class="service-icon">
+                            <i class="fas fa-truck-fast"></i>
+                        </div>
+                        <h3>FAST DELIVERY</h3>
+                        <p>We deliver your order to your doors </p>
+                       
+                    </div>
+                    
+                    <div class="service-card glass-card" data-tilt>
+                        <div class="service-icon">
+                            <i class="fas fa-cart-shopping"></i>
+                        </div>
+                        <h3>ONLINE ORDERING</h3>
+                        <p>Explore our menu & order </p>
+                        
+                    </div>
+                    
+                    <div class="service-card glass-card" data-tilt>
+                        <div class="service-icon">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                        <h3>GIFT CARDS</h3>
+                        <p>Give Gift Cards for your loved ones</p>
+                        <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <!-- Our Popular Dishes -->
+            <div class="category-section main-course" data-aos="fade-up">
+                <h3 class="category-title">Our Popular Dishes</h3>
+                <div class="category-items-grid">
+                    <div class="menu-item" data-category="popular Dishes">
+                        <div class="item-image">
+                            <img src="Classic Combo.jpg" alt="Special Burger">
+                        </div>
+                        <div class="item-content">
+                            <h4>Special Burger</h4>
+                            <div class="item-rating" style="display: flex; flex-direction: column; align-items: center;">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">(4.9)</span>
+                            </div>
+                            <p class="item-price">$22.00</p>
+                            <div class="item-actions">
+                                <button class="action-btn add-to-cart-btn" 
+                                        data-item-name="Special Burger" 
+                                        data-item-price="$22.00" 
+                                        data-item-image="Classic Combo.jpg">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>Add to Cart</span>
+                                </button>
+                                <button class="action-btn order-now-btn" 
+                                        data-item-name="Special Burger" 
+                                        data-item-price="$22.00" 
+                                        data-item-image="Classic Combo.jpg">
+                                    <i class="fas fa-bolt"></i>
+                                    <span>Order Now</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="main-course">
+                        <div class="item-image">
+                            <img src="Delicious Pizza.jpg" alt="Special Pizza">
+                        </div>
+                        <div class="item-content">
+                            <h4>Special Pizza</h4>
+                            <div class="item-rating" style="display: flex; flex-direction: column; align-items: center;">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">(4.8)</span>
+                            </div>
+                            <p class="item-price">$32.00</p>
+                            <div class="item-actions">
+                                <button class="action-btn add-to-cart-btn" 
+                                        data-item-name="Special Pizza" 
+                                        data-item-price="$32.00" 
+                                        data-item-image="Delicious Pizza.jpg">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>Add to Cart</span>
+                                </button>
+                                <button class="action-btn order-now-btn" 
+                                        data-item-name="Special Pizza" 
+                                        data-item-price="$32.00" 
+                                        data-item-image="Delicious Pizza.jpg">
+                                    <i class="fas fa-bolt"></i>
+                                    <span>Order Now</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="main-course">
+                        <div class="item-image">
+                            <img src="Beef and Vegetable Kabobs with Lemon Herb Marinade(1).jpg" alt="Special Kabobs">
+                        </div>
+                        <div class="item-content">
+                            <h4>Special Kabobs</h4>
+                            <div class="item-rating" style="display: flex; flex-direction: column; align-items: center;">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">(5.0)</span>
+                            </div>
+                            <p class="item-price">$65.00</p>
+                            <div class="item-actions">
+                                <button class="action-btn add-to-cart-btn" 
+                                        data-item-name="Special Kabobs" 
+                                        data-item-price="$65.00" 
+                                        data-item-image="Beef and Vegetable Kabobs with Lemon Herb Marinade(1).jpg">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>Add to Cart</span>
+                                </button>
+                                <button class="action-btn order-now-btn" 
+                                        data-item-name="Special Kabobs" 
+                                        data-item-price="$65.00" 
+                                        data-item-image="Beef and Vegetable Kabobs with Lemon Herb Marinade(1).jpg">
+                                    <i class="fas fa-bolt"></i>
+                                    <span>Order Now</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="main-course">
+                        <div class="item-image">
+                            <img src="Pasta Puttanesca.jpg" alt="Pasta Puttanesca">
+                        </div>
+                        <div class="item-content">
+                            <h4>Pasta Puttanesca</h4>
+                            <div class="item-rating" style="display: flex; flex-direction: column; align-items: center;">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">(4.7)</span>
+                            </div>
+                            <p class="item-price">$28.00</p>
+                            <div class="item-actions">
+                                <button class="action-btn add-to-cart-btn" 
+                                        data-item-name="Pasta Puttanesca" 
+                                        data-item-price="$28.00" 
+                                        data-item-image="Pasta Puttanesca.jpg">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>Add to Cart</span>
+                                </button>
+                                <button class="action-btn order-now-btn" 
+                                        data-item-name="Pasta Puttanesca" 
+                                        data-item-price="$28.00" 
+                                        data-item-image="Pasta Puttanesca.jpg">
+                                    <i class="fas fa-bolt"></i>
+                                    <span>Order Now</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="main-course">
+                        <div class="item-image">
+                            <img src="jpg(12).jpg" alt="Crusted Lamb">
+                        </div>
+                        <div class="item-content">
+                            <h4>Crusted Lamb</h4>
+                            <div class="item-rating" style="display: flex; flex-direction: column; align-items: center;">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">(4.8)</span>
+                            </div>
+                            <p class="item-price">$45.00</p>
+                            <div class="item-actions">
+                                <button class="action-btn add-to-cart-btn" 
+                                        data-item-name="Crusted Lamb" 
+                                        data-item-price="$45.00" 
+                                        data-item-image="jpg(12).jpg">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>Add to Cart</span>
+                                </button>
+                                <button class="action-btn order-now-btn" 
+                                        data-item-name="Crusted Lamb" 
+                                        data-item-price="$45.00" 
+                                        data-item-image="jpg(12).jpg">
+                                    <i class="fas fa-bolt"></i>
+                                    <span>Order Now</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="main-course">
+                        <div class="item-image">
+                            <img src="How to Make My Grandmother's Roast Chicken with Garlic & ….jpg" alt="Roasted Chicken">
+                        </div>
+                        <div class="item-content">
+                            <h4>Roasted Chicken</h4>
+                            <div class="item-rating" style="display: flex; flex-direction: column; align-items: center;">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">(4.9)</span>
+                            </div>
+                            <p class="item-price">$58.00</p>
+                            <div class="item-actions">
+                                <button class="action-btn add-to-cart-btn" 
+                                        data-item-name="Roasted Chicken" 
+                                        data-item-price="$58.00" 
+                                        data-item-image="How to Make My Grandmother's Roast Chicken with Garlic & ….jpg">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>Add to Cart</span>
+                                </button>
+                                <button class="action-btn order-now-btn" 
+                                        data-item-name="Roasted Chicken" 
+                                        data-item-price="$58.00" 
+                                        data-item-image="How to Make My Grandmother's Roast Chicken with Garlic & ….jpg">
+                                    <i class="fas fa-bolt"></i>
+                                    <span>Order Now</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="main-course">
+                        <div class="item-image">
+                            <img src="5 Ingredient Marinated Grilled Salmon.jpg" alt="Grilled Salmon">
+                        </div>
+                        <div class="item-content">
+                            <h4>Grilled Salmon</h4>
+                            <div class="item-rating" style="display: flex; flex-direction: column; align-items: center;">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">(4.6)</span>
+                            </div>
+                            <p class="item-price">$38.00</p>
+                            <div class="item-actions">
+                                <button class="action-btn add-to-cart-btn" 
+                                        data-item-name="Grilled Salmon" 
+                                        data-item-price="$38.00" 
+                                        data-item-image="5 Ingredient Marinated Grilled Salmon.jpg">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>Add to Cart</span>
+                                </button>
+                                <button class="action-btn order-now-btn" 
+                                        data-item-name="Grilled Salmon" 
+                                        data-item-price="$38.00" 
+                                        data-item-image="5 Ingredient Marinated Grilled Salmon.jpg">
+                                    <i class="fas fa-bolt"></i>
+                                    <span>Order Now</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="main-course">
+                        <div class="item-image">
+                            <img src="🌮🔥 Spicy Garlic Butter Birria Tacos_ A Flavor Explosion! 🧄🧈_Get ready to savor the taco experience of a lifetime! These Spicy Garlic Butter Birria Tacos are a next-level combination of tender, slow-cooked beef, crispy.jpg" alt="Special Tacos">
+                        </div>
+                        <div class="item-content">
+                            <h4>Special Tacos</h4>
+                            <div class="item-rating" style="display: flex; flex-direction: column; align-items: center;">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">(4.7)</span>
+                            </div>
+                            <p class="item-price">$42.00</p>
+                            <div class="item-actions">
+                                <button class="action-btn add-to-cart-btn" 
+                                        data-item-name="Special Tacos" 
+                                        data-item-price="$42.00" 
+                                        data-item-image="🌮🔥 Spicy Garlic Butter Birria Tacos_ A Flavor Explosion! 🧄🧈_Get ready to savor the taco experience of a lifetime! These Spicy Garlic Butter Birria Tacos are a next-level combination of tender, slow-cooked beef, crispy.jpg">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>Add to Cart</span>
+                                </button>
+                                <button class="action-btn order-now-btn" 
+                                        data-item-name="Special Tacos" 
+                                        data-item-price="$42.00" 
+                                        data-item-image="🌮🔥 Spicy Garlic Butter Birria Tacos_ A Flavor Explosion! 🧄🧈_Get ready to savor the taco experience of a lifetime! These Spicy Garlic Butter Birria Tacos are a next-level combination of tender, slow-cooked beef, crispy.jpg">
+                                    <i class="fas fa-bolt"></i>
+                                    <span>Order Now</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="main-course">
+                        <div class="item-image">
+                            <img src="🌯 Spiced Chicken Wraps with Creamy Mayo & Chilli Sauce 🔥🥗__Perfectly marinated, juicy chicken thighs wrapped in warm tortillas with crunchy cabbage and spring onions, finished off with a drizzle of mayo and your favori.jpg" alt="Chicken Wraps">
+                        </div>
+                        <div class="item-content">
+                            <h4>Chicken Wraps</h4>
+                            <div class="item-rating" style="display: flex; flex-direction: column; align-items: center;">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">(4.5)</span>
+                            </div>
+                            <p class="item-price">$26.00</p>
+                            <div class="item-actions">
+                                <button class="action-btn add-to-cart-btn" 
+                                        data-item-name="Chicken Wraps" 
+                                        data-item-price="$26.00" 
+                                        data-item-image="🌯 Spiced Chicken Wraps with Creamy Mayo & Chilli Sauce 🔥🥗__Perfectly marinated, juicy chicken thighs wrapped in warm tortillas with crunchy cabbage and spring onions, finished off with a drizzle of mayo and your favori.jpg">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>Add to Cart</span>
+                                </button>
+                                <button class="action-btn order-now-btn" 
+                                        data-item-name="Chicken Wraps" 
+                                        data-item-price="$26.00" 
+                                        data-item-image="🌯 Spiced Chicken Wraps with Creamy Mayo & Chilli Sauce 🔥🥗__Perfectly marinated, juicy chicken thighs wrapped in warm tortillas with crunchy cabbage and spring onions, finished off with a drizzle of mayo and your favori.jpg">
+                                    <i class="fas fa-bolt"></i>
+                                    <span>Order Now</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Traditional Category Section -->
+            <div class="category-section appetizers" data-aos="fade-up">
+                <h3 class="category-title">Traditional Foods</h3>
+                <div class="category-items-grid">
+                    <div class="menu-item" data-category="Traditional Foods">
+                        <div class="item-image">
+                            <img src="Ethiopian traditional food.jpg" alt="Raw Meat (ጥሬ ስጋ)">
+                        </div>
+                        <div class="item-content">
+                            <h4>Raw Meat (ጥሬ ስጋ)</h4>
+                            <div class="item-rating" style="display: flex; flex-direction: column; align-items: center;">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-text">(4.7)</span>
+                            </div>
+                            <p class="item-price">$14.00</p>
+                            <div class="item-actions">
+                                <button class="action-btn add-to-cart-btn" 
+                                        data-item-name="Raw Meat (ጥሬ ስጋ)" 
+                                        data-item-price="$14.00" 
+                                        data-item-image="Ethiopian traditional food.jpg">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>Add to Cart</span>
+                                </button>
+                                <button class="action-btn order-now-btn" 
+                                        data-item-name="Raw Meat (ጥሬ ስጋ)" 
+                                        data-item-price="$14.00" 
+                                        data-item-image="Ethiopian traditional food.jpg">
+                                    <i class="fas fa-bolt"></i>
+                                    <span>Order Now</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="appetizers">
+                        <div class="item-image">
+                            <img src="🦋 spammydollz 🦋.jpg" alt="Mahiberawi (ማህበራዊ)">
+                        </div>
+                        <div class="item-content">
+                            <h4>Mahiberawi (ማህበራዊ)</h4>
+                            <div class="item-rating" style="display: flex; flex-direction: column; align-items: center;">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">(4.8)</span>
+                            </div>
+                            <p class="item-price">$18.00</p>
+                            <div class="item-actions">
+                                <button class="action-btn add-to-cart-btn" 
+                                        data-item-name="Mahiberawi (ማህበራዊ)" 
+                                        data-item-price="$18.00" 
+                                        data-item-image="🦋 spammydollz 🦋.jpg">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>Add to Cart</span>
+                                </button>
+                                <button class="action-btn order-now-btn" 
+                                        data-item-name="Mahiberawi (ማህበራዊ)" 
+                                        data-item-price="$18.00" 
+                                        data-item-image="🦋 spammydollz 🦋.jpg">
+                                    <i class="fas fa-bolt"></i>
+                                    <span>Order Now</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="appetizers">
+                        <div class="item-image">
+                            <img src="ሺሮ, በያይነቱ- Ethiopian food 🥘🇪🇹.jpg" alt="Shiro (ሽሮ)">
+                        </div>
+                        <div class="item-content">
+                            <h4>Shiro (ሽሮ)</h4>
+                            <div class="item-rating" style="display: flex; flex-direction: column; align-items: center;">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-text">(4.6)</span>
+                            </div>
+                            <p class="item-price">$10.00</p>
+                            <div class="item-actions">
+                                <button class="action-btn add-to-cart-btn" 
+                                        data-item-name="Shiro (ሽሮ)" 
+                                        data-item-price="$10.00" 
+                                        data-item-image="ሺሮ, በያይነቱ- Ethiopian food 🥘🇪🇹.jpg">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>Add to Cart</span>
+                                </button>
+                                <button class="action-btn order-now-btn" 
+                                        data-item-name="Shiro (ሽሮ)" 
+                                        data-item-price="$10.00" 
+                                        data-item-image="ሺሮ, በያይነቱ- Ethiopian food 🥘🇪🇹.jpg">
+                                    <i class="fas fa-bolt"></i>
+                                    <span>Order Now</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="appetizers">
+                        <div class="item-image">
+                            <img src="jpg(26).jpg" alt="Quanta Firfir (ቋንጣ ፍርፍር)">
+                        </div>
+                        <div class="item-content">
+                            <h4>Quanta Firfir (ቋንጣ ፍርፍር)</h4>
+                            <div class="item-rating" style="display: flex; flex-direction: column; align-items: center;">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-text">(4.7)</span>
+                            </div>
+                            <p class="item-price">$20.00</p>
+                            <div class="item-actions">
+                                <button class="action-btn add-to-cart-btn" 
+                                        data-item-name="Quanta Firfir (ቋንጣ ፍርፍር)" 
+                                        data-item-price="$20.00" 
+                                        data-item-image="jpg(26).jpg">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>Add to Cart</span>
+                                </button>
+                                <button class="action-btn order-now-btn" 
+                                        data-item-name="Quanta Firfir (ቋንጣ ፍርፍር)" 
+                                        data-item-price="$20.00" 
+                                        data-item-image="jpg(26).jpg">
+                                    <i class="fas fa-bolt"></i>
+                                    <span>Order Now</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="appetizers">
+                        <div class="item-image">
+                            <img src="Tihlo(ጥሕሎ) Tihlo (ጥሕሎ) is a traditional Ethiopian dish, particularly popular in the Tigray region_ It is made primarily from roasted barley flour (besso) mixed with water to form a dough. This dough is then rolled into sm.jpg" alt="Tihlo(ጥሕሎ)">
+                        </div>
+                        <div class="item-content">
+                            <h4>Tihlo(ጥሕሎ)</h4>
+                            <div class="item-rating" style="display: flex; flex-direction: column; align-items: center;">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">(4.8)</span>
+                            </div>
+                            <p class="item-price">$15.00</p>
+                            <div class="item-actions">
+                                <button class="action-btn add-to-cart-btn" 
+                                        data-item-name="Tihlo(ጥሕሎ)" 
+                                        data-item-price="$15.00" 
+                                        data-item-image="Tihlo(ጥሕሎ) Tihlo (ጥሕሎ) is a traditional Ethiopian dish, particularly popular in the Tigray region_ It is made primarily from roasted barley flour (besso) mixed with water to form a dough. This dough is then rolled into sm.jpg">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>Add to Cart</span>
+                                </button>
+                                <button class="action-btn order-now-btn" 
+                                        data-item-name="Tihlo(ጥሕሎ)" 
+                                        data-item-price="$15.00" 
+                                        data-item-image="Tihlo(ጥሕሎ) Tihlo (ጥሕሎ) is a traditional Ethiopian dish, particularly popular in the Tigray region_ It is made primarily from roasted barley flour (besso) mixed with water to form a dough. This dough is then rolled into sm.jpg">
+                                    <i class="fas fa-bolt"></i>
+                                    <span>Order Now</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="appetizers">
+                        <div class="item-image">
+                            <img src="Special tibs (marinated beef) with injera.jpg" alt="Tibs (ጥብስ)">
+                        </div>
+                        <div class="item-content">
+                            <h4>Tibs (ጥብስ)</h4>
+                            <div class="item-rating" style="display: flex; flex-direction: column; align-items: center;">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-text">(4.5)</span>
+                            </div>
+                            <p class="item-price">$16.00</p>
+                            <div class="item-actions">
+                                <button class="action-btn add-to-cart-btn" 
+                                        data-item-name="Tibs (ጥብስ)" 
+                                        data-item-price="$16.00" 
+                                        data-item-image="Special tibs (marinated beef) with injera.jpg">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>Add to Cart</span>
+                                </button>
+                                <button class="action-btn order-now-btn" 
+                                        data-item-name="Tibs (ጥብስ)" 
+                                        data-item-price="$16.00" 
+                                        data-item-image="Special tibs (marinated beef) with injera.jpg">
+                                    <i class="fas fa-bolt"></i>
+                                    <span>Order Now</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="appetizers">
+                        <div class="item-image">
+                            <img src="Nationalgericht Äthiopien_ Doro Wat (Rezept).jpg" alt="Doro Wat (ዶሮ)">
+                        </div>
+                        <div class="item-content">
+                            <h4>Doro Wat (ዶሮ)</h4>
+                            <div class="item-rating" style="display: flex; flex-direction: column; align-items: center;">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">(4.9)</span>
+                            </div>
+                            <p class="item-price">$24.00</p>
+                            <div class="item-actions">
+                                <button class="action-btn add-to-cart-btn" 
+                                        data-item-name="Doro Wat (ዶሮ)" 
+                                        data-item-price="$24.00" 
+                                        data-item-image="Nationalgericht Äthiopien_ Doro Wat (Rezept).jpg">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>Add to Cart</span>
+                                </button>
+                                <button class="action-btn order-now-btn" 
+                                        data-item-name="Doro Wat (ዶሮ)" 
+                                        data-item-price="$24.00" 
+                                        data-item-image="Nationalgericht Äthiopien_ Doro Wat (Rezept).jpg">
+                                    <i class="fas fa-bolt"></i>
+                                    <span>Order Now</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="appetizers">
+                        <div class="item-image">
+                            <img src="Dorowat.jpg" alt="Kitfo (ክትፎ)">
+                        </div>
+                        <div class="item-content">
+                            <h4>Kitfo (ክትፎ)</h4>
+                            <div class="item-rating" style="display: flex; flex-direction: column; align-items: center;">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-text">(4.6)</span>
+                            </div>
+                            <p class="item-price">$18.00</p>
+                            <div class="item-actions">
+                                <button class="action-btn add-to-cart-btn" 
+                                        data-item-name="Kitfo (ክትፎ)" 
+                                        data-item-price="$18.00" 
+                                        data-item-image="Dorowat.jpg">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>Add to Cart</span>
+                                </button>
+                                <button class="action-btn order-now-btn" 
+                                        data-item-name="Kitfo (ክትፎ)" 
+                                        data-item-price="$18.00" 
+                                        data-item-image="Dorowat.jpg">
+                                    <i class="fas fa-bolt"></i>
+                                    <span>Order Now</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="appetizers">
+                        <div class="item-image">
+                            <img src="Savoring the flavors of Ethiopia! Wat, a spicy stew made with tender meat and aromatic spices, served with a side of Injera, a traditional sourdough flatbread_ A delicious and authentic Ethiopian culinary experience.jpg" alt="Beyaynet (በየአይነት)">
+                        </div>
+                        <div class="item-content">
+                            <h4>Beyaynet (በየአይነት)</h4>
+                            <div class="item-rating" style="display: flex; flex-direction: column; align-items: center;">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">(4.7)</span>
+                            </div>
+                            <p class="item-price">$14.00</p>
+                            <div class="item-actions">
+                                <button class="action-btn add-to-cart-btn" 
+                                        data-item-name="Beyaynet (በየአይነት)" 
+                                        data-item-price="$14.00" 
+                                        data-item-image="Savoring the flavors of Ethiopia! Wat, a spicy stew made with tender meat and aromatic spices, served with a side of Injera, a traditional sourdough flatbread_ A delicious and authentic Ethiopian culinary experience.jpg">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>Add to Cart</span>
+                                </button>
+                                <button class="action-btn order-now-btn" 
+                                        data-item-name="Beyaynet (በየአይነት)" 
+                                        data-item-price="$14.00" 
+                                        data-item-image="Savoring the flavors of Ethiopia! Wat, a spicy stew made with tender meat and aromatic spices, served with a side of Injera, a traditional sourdough flatbread_ A delicious and authentic Ethiopian culinary experience.jpg">
+                                    <i class="fas fa-bolt"></i>
+                                    <span>Order Now</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desserts Category Section -->
+            <div class="category-section desserts" data-aos="fade-up">
+                <h3 class="category-title">Desserts</h3>
+                <div class="category-items-grid">
+                    <div class="menu-item" data-category="desserts">
+                        <div class="item-image">
+                            <img src="Decadence Unleashed_ A Chocolate Lava Cake Extravaganza.jpg" alt="Chocolate Lava">
+                        </div>
+                        <div class="item-content">
+                            <h4>Chocolate Lava</h4>
+                            <div class="item-rating" style="display: flex; flex-direction: column; align-items: center;">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">(4.9)</span>
+                            </div>
+                            <p class="item-price">$14.00</p>
+                            <div class="item-actions">
+                                <button class="action-btn add-to-cart-btn" 
+                                        data-item-name="Chocolate Lava" 
+                                        data-item-price="$14.00" 
+                                        data-item-image="Decadence Unleashed_ A Chocolate Lava Cake Extravaganza.jpg">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>Add to Cart</span>
+                                </button>
+                                <button class="action-btn order-now-btn" 
+                                        data-item-name="Chocolate Lava" 
+                                        data-item-price="$14.00" 
+                                        data-item-image="Decadence Unleashed_ A Chocolate Lava Cake Extravaganza.jpg">
+                                    <i class="fas fa-bolt"></i>
+                                    <span>Order Now</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="desserts">
+                        <div class="item-image">
+                            <img src="jpg(15).jpg" alt="Strawberry Bliss">
+                        </div>
+                        <div class="item-content">
+                            <h4>Strawberry Bliss</h4>
+                            <div class="item-rating" style="display: flex; flex-direction: column; align-items: center;">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-text">(4.8)</span>
+                            </div>
+                            <p class="item-price">$12.00</p>
+                            <div class="item-actions">
+                                <button class="action-btn add-to-cart-btn" 
+                                        data-item-name="Strawberry Bliss" 
+                                        data-item-price="$12.00" 
+                                        data-item-image="jpg(15).jpg">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>Add to Cart</span>
+                                </button>
+                                <button class="action-btn order-now-btn" 
+                                        data-item-name="Strawberry Bliss" 
+                                        data-item-price="$12.00" 
+                                        data-item-image="jpg(15).jpg">
+                                    <i class="fas fa-bolt"></i>
+                                    <span>Order Now</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="desserts">
+                        <div class="item-image">
+                            <img src="Chocolate Cheesecake Recipe.jpg" alt="Chocolate Cake">
+                        </div>
+                        <div class="item-content">
+                            <h4>Chocolate Cake</h4>
+                            <div class="item-rating" style="display: flex; flex-direction: column; align-items: center;">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">(4.7)</span>
+                            </div>
+                            <p class="item-price">$13.00</p>
+                            <div class="item-actions">
+                                <button class="action-btn add-to-cart-btn" 
+                                        data-item-name="Chocolate Cake" 
+                                        data-item-price="$13.00" 
+                                        data-item-image="Chocolate Cheesecake Recipe.jpg">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>Add to Cart</span>
+                                </button>
+                                <button class="action-btn order-now-btn" 
+                                        data-item-name="Chocolate Cake" 
+                                        data-item-price="$13.00" 
+                                        data-item-image="Chocolate Cheesecake Recipe.jpg">
+                                    <i class="fas fa-bolt"></i>
+                                    <span>Order Now</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="desserts">
+                        <div class="item-image">
+                            <img src="𝐴𝑙𝑙 𝑐𝑟𝑒𝑑𝑖𝑡𝑠 𝑡𝑜 𝑡ℎ𝑒 𝑜𝑤𝑛𝑒𝑟 ♡₊˚ 🦢・₊✧.jpg" alt="Cheesecake">
+                        </div>
+                        <div class="item-content">
+                            <h4>Cheesecake</h4>
+                            <div class="item-rating" style="display: flex; flex-direction: column; align-items: center;">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-text">(4.8)</span>
+                            </div>
+                            <p class="item-price">$12.00</p>
+                            <div class="item-actions">
+                                <button class="action-btn add-to-cart-btn" 
+                                        data-item-name="Cheesecake" 
+                                        data-item-price="$12.00" 
+                                        data-item-image="𝐴𝑙𝑙 𝑐𝑟𝑒𝑑𝑖𝑡𝑠 𝑡𝑜 𝑡ℎ𝑒 𝑜𝑤𝑛𝑒𝑟 ♡₊˚ 🦢・₊✧.jpg">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>Add to Cart</span>
+                                </button>
+                                <button class="action-btn order-now-btn" 
+                                        data-item-name="Cheesecake" 
+                                        data-item-price="$12.00" 
+                                        data-item-image="𝐴𝑙𝑙 𝑐𝑟𝑒𝑑𝑖𝑡𝑠 𝑡𝑜 𝑡ℎ𝑒 𝑜𝑤𝑛𝑒𝑟 ♡₊˚ 🦢・₊✧.jpg">
+                                    <i class="fas fa-bolt"></i>
+                                    <span>Order Now</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="desserts">
+                        <div class="item-image">
+                            <img src="jpg(17).jpg" alt="Chocolate Drizzled">
+                        </div>
+                        <div class="item-content">
+                            <h4>Chocolate Drizzled</h4>
+                            <div class="item-rating" style="display: flex; flex-direction: column; align-items: center;">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">(4.7)</span>
+                            </div>
+                            <p class="item-price">$11.00</p>
+                            <div class="item-actions">
+                                <button class="action-btn add-to-cart-btn" 
+                                        data-item-name="Chocolate Drizzled" 
+                                        data-item-price="$11.00" 
+                                        data-item-image="jpg(17).jpg">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>Add to Cart</span>
+                                </button>
+                                
+                                <button class="action-btn order-now-btn" 
+                                        data-item-name="Chocolate Drizzled" 
+                                        data-item-price="$11.00" 
+                                        data-item-image="jpg(17).jpg">
+                                    <i class="fas fa-bolt"></i>
+                                    <span>Order Now</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="desserts">
+                        <div class="item-image">
+                            <img src="CASTLE101 ⚜️ ICE CREAM STRAWBERRY NUTS 🍨(1).jpg" alt="IceCream Sundae">
+                        </div>
+                        <div class="item-content">
+                            <h4>IceCream Sundae</h4>
+                            <div class="item-rating" style="display: flex; flex-direction: column; align-items: center;">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-text">(4.6)</span>
+                            </div>
+                            <p class="item-price">$10.00</p>
+                            <div class="item-actions">
+                                <button class="action-btn add-to-cart-btn" 
+                                        data-item-name="IceCream Sundae" 
+                                        data-item-price="$10.00" 
+                                        data-item-image="CASTLE101 ⚜️ ICE CREAM STRAWBERRY NUTS 🍨(1).jpg">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>Add to Cart</span>
+                                </button>
+                                <button class="action-btn order-now-btn" 
+                                        data-item-name="IceCream Sundae" 
+                                        data-item-price="$10.00" 
+                                        data-item-image="CASTLE101 ⚜️ ICE CREAM STRAWBERRY NUTS 🍨(1).jpg">
+                                    <i class="fas fa-bolt"></i>
+                                    <span>Order Now</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Beverages Category Section -->
+            <div class="category-section beverages" data-aos="fade-up">
+                <h3 class="category-title">Beverages</h3>
+                <div class="category-items-grid">
+                    <div class="menu-item" data-category="beverages">
+                        <div class="item-image">
+                            <img src="jpg(10)s.jpg" alt="Soft Drinks">
+                        </div>
+                        <div class="item-content">
+                            <h4>Soft Drinks</h4>
+                            <div class="item-rating" style="display: flex; flex-direction: column; align-items: center;">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">(4.9)</span>
+                            </div>
+                            <p class="item-price">$14.00</p>
+                            <div class="item-actions">
+                                <button class="action-btn add-to-cart-btn" 
+                                        data-item-name="Soft Drinks" 
+                                        data-item-price="$14.00" 
+                                        data-item-image="jpg(10)s.jpg">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>Add to Cart</span>
+                                </button>
+                                <button class="action-btn order-now-btn" 
+                                        data-item-name="Soft Drinks" 
+                                        data-item-price="$14.00" 
+                                        data-item-image="jpg(10)s.jpg">
+                                    <i class="fas fa-bolt"></i>
+                                    <span>Order Now</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="beverages">
+                        <div class="item-image">
+                            <img src="Port Cobbler.jpg" alt="Port Cobbler">
+                        </div>
+                        <div class="item-content">
+                            <h4>Port Cobbler</h4>
+                            <div class="item-rating" style="display: flex; flex-direction: column; align-items: center;">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-text">(4.8)</span>
+                            </div>
+                            <p class="item-price">$12.00</p>
+                            <div class="item-actions">
+                                <button class="action-btn add-to-cart-btn" 
+                                        data-item-name="Port Cobbler" 
+                                        data-item-price="$12.00" 
+                                        data-item-image="Port Cobbler.jpg">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>Add to Cart</span>
+                                </button>
+                                <button class="action-btn order-now-btn" 
+                                        data-item-name="Port Cobbler" 
+                                        data-item-price="$12.00" 
+                                        data-item-image="Port Cobbler.jpg">
+                                    <i class="fas fa-bolt"></i>
+                                    <span>Order Now</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="beverages">
+                        <div class="item-image">
+                            <img src="Watermelon Sake Cocktail.jpg" alt="Watermelon Juice">
+                        </div>
+                        <div class="item-content">
+                            <h4>Watermelon Juice</h4>
+                            <div class="item-rating" style="display: flex; flex-direction: column; align-items: center;">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">(4.7)</span>
+                            </div>
+                            <p class="item-price">$7.00</p>
+                            <div class="item-actions">
+                                <button class="action-btn add-to-cart-btn" 
+                                        data-item-name="Watermelon Juice" 
+                                        data-item-price="$7.00" 
+                                        data-item-image="Watermelon Sake Cocktail.jpg">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>Add to Cart</span>
+                                </button>
+                                <button class="action-btn order-now-btn" 
+                                        data-item-name="Watermelon Juice" 
+                                        data-item-price="$7.00" 
+                                        data-item-image="Watermelon Sake Cocktail.jpg">
+                                    <i class="fas fa-bolt"></i>
+                                    <span>Order Now</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="beverages">
+                        <div class="item-image">
+                            <img src="Lava Flow(1).jpg" alt="Lava Flow">
+                        </div>
+                        <div class="item-content">
+                            <h4>Lava Flow</h4>
+                            <div class="item-rating" style="display: flex; flex-direction: column; align-items: center;">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-text">(4.8)</span>
+                            </div>
+                            <p class="item-price">$8.00</p>
+                            <div class="item-actions">
+                                <button class="action-btn add-to-cart-btn" 
+                                        data-item-name="Lava Flow" 
+                                        data-item-price="$8.00" 
+                                        data-item-image="Lava Flow(1).jpg">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>Add to Cart</span>
+                                </button>
+                                <button class="action-btn order-now-btn" 
+                                        data-item-name="Lava Flow" 
+                                        data-item-price="$8.00" 
+                                        data-item-image="Lava Flow(1).jpg">
+                                    <i class="fas fa-bolt"></i>
+                                    <span>Order Now</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="beverages">
+                        <div class="item-image">
+                            <img src="Mango and White Cream Frappuccino.jpg" alt="Mango Juice">
+                        </div>
+                        <div class="item-content">
+                            <h4>Mango Juice</h4>
+                            <div class="item-rating" style="display: flex; flex-direction: column; align-items: center;">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">(4.9)</span>
+                            </div>
+                            <p class="item-price">$6.00</p>
+                            <div class="item-actions">
+                                <button class="action-btn add-to-cart-btn" 
+                                        data-item-name="Mango Juice" 
+                                        data-item-price="$6.00" 
+                                        data-item-image="Mango and White Cream Frappuccino.jpg">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>Add to Cart</span>
+                                </button>
+                                <button class="action-btn order-now-btn" 
+                                        data-item-name="Mango Juice" 
+                                        data-item-price="$6.00" 
+                                        data-item-image="Mango and White Cream Frappuccino.jpg">
+                                    <i class="fas fa-bolt"></i>
+                                    <span>Order Now</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="beverages">
+                        <div class="item-image">
+                            <img src="jpg(11)w.jpg" alt="Artisan Mocktails">
+                        </div>
+                        <div class="item-content">
+                            <h4>Artisan Mocktails</h4>
+                            <div class="item-rating" style="display: flex; flex-direction: column; align-items: center;">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-text">(4.7)</span>
+                            </div>
+                            <p class="item-price">$9.00</p>
+                            <div class="item-actions">
+                                <button class="action-btn add-to-cart-btn" 
+                                        data-item-name="Artisan Mocktails" 
+                                        data-item-price="$9.00" 
+                                        data-item-image="jpg(11)w.jpg">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>Add to Cart</span>
+                                </button>
+                                <button class="action-btn order-now-btn" 
+                                        data-item-name="Artisan Mocktails" 
+                                        data-item-price="$9.00" 
+                                        data-item-image="jpg(11)w.jpg">
+                                    <i class="fas fa-bolt"></i>
+                                    <span>Order Now</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="beverages">
+                        <div class="item-image">
+                            <img src="Vino Francés.jpg" alt="Vino Francés">
+                        </div>
+                        <div class="item-content">
+                            <h4>Vino Francés</h4>
+                            <div class="item-rating" style="display: flex; flex-direction: column; align-items: center;">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">(4.8)</span>
+                            </div>
+                            <p class="item-price">$6.00</p>
+                            <div class="item-actions">
+                                <button class="action-btn add-to-cart-btn" 
+                                        data-item-name="Vino Francés" 
+                                        data-item-price="$6.00" 
+                                        data-item-image="Vino Francés.jpg">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>Add to Cart</span>
+                                </button>
+                                <button class="action-btn order-now-btn" 
+                                        data-item-name="Vino Francés" 
+                                        data-item-price="$6.00" 
+                                        data-item-image="Vino Francés.jpg">
+                                    <i class="fas fa-bolt"></i>
+                                    <span>Order Now</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="beverages">
+                        <div class="item-image">
+                            <img src="Vodka Zombie.jpg" alt="Vodka Zombie">
+                        </div>
+                        <div class="item-content">
+                            <h4>Vodka Zombie</h4>
+                            <div class="item-rating" style="display: flex; flex-direction: column; align-items: center;">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-text">(4.6)</span>
+                            </div>
+                            <p class="item-price">$5.00</p>
+                            <div class="item-actions">
+                                <button class="action-btn add-to-cart-btn" 
+                                        data-item-name="Vodka Zombie" 
+                                        data-item-price="$5.00" 
+                                        data-item-image="Vodka Zombie.jpg">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>Add to Cart</span>
+                                </button>
+                                <button class="action-btn order-now-btn" 
+                                        data-item-name="Vodka Zombie" 
+                                        data-item-price="$5.00" 
+                                        data-item-image="Vodka Zombie.jpg">
+                                    <i class="fas fa-bolt"></i>
+                                    <span>Order Now</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="beverages">
+                        <div class="item-image">
+                            <img src="CASTLE 101 ⚜️ COCKTAILS🍹.jpg" alt="Castle Cocktail">
+                        </div>
+                        <div class="item-content">
+                            <h4>Castle Cocktail</h4>
+                            <div class="item-rating" style="display: flex; flex-direction: column; align-items: center;">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">(4.7)</span>
+                            </div>
+                            <p class="item-price">$5.00</p>
+                            <div class="item-actions">
+                                <button class="action-btn add-to-cart-btn" 
+                                        data-item-name="Castle Cocktail" 
+                                        data-item-price="$5.00" 
+                                        data-item-image="CASTLE 101 ⚜️ COCKTAILS🍹.jpg">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>Add to Cart</span>
+                                </button>
+                                <button class="action-btn order-now-btn" 
+                                        data-item-name="Castle Cocktail" 
+                                        data-item-price="$5.00" 
+                                        data-item-image="CASTLE 101 ⚜️ COCKTAILS🍹.jpg">
+                                    <i class="fas fa-bolt"></i>
+                                    <span>Order Now</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">VISUAL FEAST</span>
+                <h2 class="section-title">Gallery</h2>
+                <p class="section-description">A glimpse into our culinary artistry and dining atmosphere</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="Sushi restaurant aesthetic yasss.jpg" alt="Elegant restaurant interior" loading="lazy" width="600" height="300">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="pic.jpg" alt="Professional chef preparing dishes" loading="lazy" width="600" height="300">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="Luxury Dining in Barcelona – Sunset, Wine & Fine Cuisine.jpg" alt="Classic spaghetti and meatballs signature dish" loading="lazy" width="600" height="300">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="Free Chefs Preparing Food Image _ Download at StockCake.jpg" alt="Intimate dining experience" loading="lazy" width="600" height="300">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="500">
+                    <img src="dinner.jpg" alt="Artisanal dessert presentation" loading="lazy" width="600" height="300">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="600">
+                    <img src="phot.jpg" alt="Premium beverage selection" loading="lazy" width="600" height="300">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+        <!-- Gallery Modal (only for this section) -->
+        <div class="gallery-modal" id="gallery-modal" style="display:none; position:fixed; z-index:9999; left:0; top:0; width:100vw; height:100vh; background:rgba(0,0,0,0.85); align-items:center; justify-content:center;">
+            <span class="gallery-modal-close" id="gallery-modal-close" style="position:absolute;top:30px;right:40px;font-size:2.5rem;color:#fff;cursor:pointer;z-index:10001;"><i class="fas fa-times"></i></span>
+            <img id="gallery-modal-img" src="/placeholder.svg" alt="Gallery Large" style="max-width:90vw;max-height:80vh;border-radius:1rem;box-shadow:0 4px 32px rgba(0,0,0,0.3);">
+        </div>
+        <script>
+        // Only for gallery section
+        document.addEventListener('DOMContentLoaded', function () {
+            const galleryItems = document.querySelectorAll('.gallery .gallery-item img, .gallery .gallery-item .gallery-overlay');
+            const modal = document.getElementById('gallery-modal');
+            const modalImg = document.getElementById('gallery-modal-img');
+            const modalClose = document.getElementById('gallery-modal-close');
+
+            // Open modal on image or overlay click
+            document.querySelectorAll('.gallery .gallery-item').forEach(item => {
+                item.addEventListener('click', function () {
+                    const img = item.querySelector('img');
+                    modalImg.src = img.src;
+                    modalImg.alt = img.alt;
+                    modal.style.display = 'flex';
+                });
+            });
+
+            // Close modal
+            modalClose.addEventListener('click', function () {
+                modal.style.display = 'none';
+                modalImg.src = '';
+            });
+
+            // Close modal on background click
+            modal.addEventListener('click', function (e) {
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                    modalImg.src = '';
+                }
+            });
+
+            // Prevent modal click from closing when clicking the image
+            modalImg.addEventListener('click', function (e) {
+                e.stopPropagation();
+            });
+        });
+        </script>
+    </section>
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="testimonials-content">
+                <div class="chef-section" data-aos="fade-right">
+                    <div class="chef-image">
+                        <img src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Executive Chef" loading="lazy" width="600" height="500">
+                        <div class="chef-badge">
+                            <span>👨‍🍳 Executive Chef</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonials-text" data-aos="fade-left">
+                    <div class="section-header">
+                        <span class="section-subtitle">TESTIMONIALS</span>
+                        <h2 class="section-title">What Our Customers<br>Say About Us</h2>
+                    </div>
+                    
+                    <div class="testimonial-slider" id="testimonial-slider">
+                        <div class="testimonial-slide active">
+                            <div class="testimonial-content">
+                                <div class="quote-icon">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <p class="testimonial-quote">"I had the pleasure of dining at Foodi last night, and I'm still raving about the experience! The attention to detail in presentation and service was impeccable. Every dish was a work of art."</p>
+                                <div class="customer-info">
+                                    <img src="188613864.jpg" alt="John Anderson" class="customer-avatar" loading="lazy" width="60" height="60">
+                                    <div class="customer-details">
+                                        <h4>Abel Tewodros</h4>
+                                        <span>Food Critic</span>
+                                        <div class="rating">
+                                            <div class="stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span>5.0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-slide">
+                            <div class="testimonial-content">
+                                <div class="quote-icon">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <p class="testimonial-quote">"The ambiance was perfect for our anniversary dinner. Every dish was a masterpiece, and the staff made us feel like royalty. The wine pairing was exceptional. Can't wait to return!"</p>
+                                <div class="customer-info">
+                                    <img src="photo_2025-06-05_00-18-41.jpg" alt="Sarah Mitchell" class="customer-avatar" loading="lazy" width="60" height="60">
+                                    <div class="customer-details">
+                                        <h4>Sarah Mitchell</h4>
+                                        <span>Regular Customer</span>
+                                        <div class="rating">
+                                            <div class="stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span>4.9</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-slide">
+                            <div class="testimonial-content">
+                                <div class="quote-icon">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <p class="testimonial-quote">"Outstanding culinary experience! The fusion of flavors was incredible, and the presentation was Instagram-worthy. The service was attentive without being intrusive. Highly recommended!"</p>
+                                <div class="customer-info">
+                                    <img src="photo_2025-06-05_00-10-53.jpg" alt="Michael Chen" class="customer-avatar" loading="lazy" width="60" height="60">
+                                    <div class="customer-details">
+                                        <h4>Fitsum A</h4>
+                                        <span>Business Executive</span>
+                                        <div class="rating">
+                                            <div class="stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span>4.8</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-controls">
+                        <button class="testimonial-btn prev" id="prev-testimonial" aria-label="Previous testimonial">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="testimonial-btn next" id="next-testimonial" aria-label="Next testimonial">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="testimonial-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">4.9</span>
+                            <span class="stat-label">Average Rating</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">18.6k</span>
+                            <span class="stat-label">Reviews</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">95%</span>
+                            <span class="stat-label">Satisfaction</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section class="reservation" id="reservation">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">BOOK A TABLE</span>
+                <h2 class="section-title">Make a Reservation</h2>
+                <p class="section-description">Reserve your table for an unforgettable dining experience</p>
+            </div>
+            
+            <div class="reservation-content">
+                <div class="reservation-form-container" data-aos="fade-right">
+                    <form class="reservation-form glass-card" id="reservation-form">
+                        <div class="form-header">
+                            <h3>Reserve Your Table</h3>
+                            <p>Fill in the details below to secure your dining experience</p>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="guests">Number of Guests</label>
+                                <select id="guests" name="guests" required>
+                                    <option value="" disabled selected>Select guests</option>
+                                    <option value="1">1 Person</option>
+                                    <option value="2">2 People</option>
+                                    <option value="3">3 People</option>
+                                    <option value="4">4 People</option>
+                                    <option value="5">5 People</option>
+                                    <option value="6">6 People</option>
+                                    <option value="7+">7+ People</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Preferred Date</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Preferred Time</label>
+                                <select id="time" name="time" required>
+                                    <option value="" disabled selected>Select time</option>
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="11:30">11:30 AM</option>
+                                    <option value="12:00">12:00 PM</option>
+                                    <option value="12:30">12:30 PM</option>
+                                    <option value="13:00">1:00 PM</option>
+                                    <option value="13:30">1:30 PM</option>
+                                    <option value="14:00">2:00 PM</option>
+                                    <option value="18:00">6:00 PM</option>
+                                    <option value="18:30">6:30 PM</option>
+                                    <option value="19:00">7:00 PM</option>
+                                    <option value="19:30">7:30 PM</option>
+                                    <option value="20:00">8:00 PM</option>
+                                    <option value="20:30">8:30 PM</option>
+                                    <option value="21:00">9:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="occasion">Special Occasion (Optional)</label>
+                            <select id="occasion" name="occasion">
+                                <option value="">Select occasion</option>
+                                <option value="birthday">Birthday</option>
+                                <option value="anniversary">Anniversary</option>
+                                <option value="business">Business Meeting</option>
+                                <option value="date">Date Night</option>
+                                <option value="celebration">Celebration</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Special Requests</label>
+                            <textarea id="message" name="message" placeholder="Any dietary restrictions, seating preferences, or special requests..." rows="4"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-calendar-check"></i>
+                            <span>Book Now</span>
+                        </button>
+                        
+                        <p class="form-note">
+                            <i class="fas fa-info-circle"></i>
+                            You will receive a confirmation email within 15 minutes
+                        </p>
+                    </form>
+                </div>
+                
+                <div class="reservation-info" data-aos="fade-left">
+                    <div class="info-card glass-card">
+                        <div class="info-header">
+                            <h3>Restaurant Information</h3>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Opening Hours</h4>
+                                <p>Monday - Friday: 11:00 AM - 10:00 PM</p>
+                                <p>Saturday - Sunday: 10:00 AM - 11:00 PM</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Call for Reservations</h4>
+                                <p>+251 953813466</p>
+                                <p>Available 24/7</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Location</h4>
+                                <p>Bole, Ethiopian Restaurant</p>
+                                <p>Addis Ababa</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-car"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Parking</h4>
+                                <p>Complimentary valet parking</p>
+                                <p>Self-parking available</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="reservation-image">
+                        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Elegant restaurant dining room" loading="lazy" width="800" height="300">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">GET IN TOUCH</span>
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-description">We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+            </div>
+            
+            <div class="contact-content horizontal-contact" style="display: flex; justify-content: center; align-items: stretch; gap: 2rem; flex-wrap: wrap;">
+                <div class="contact-item" style="min-width:220px; flex:1; background: #fff; border-radius: 1rem; box-shadow: 0 2px 12px rgba(0,0,0,0.06); padding: 2rem 1.2rem; display: flex; flex-direction: column; align-items: center; font-family: 'Inter', Arial, sans-serif;">
+                    <div class="contact-icon" style="font-size: 2.2rem; color: #d35400; margin-bottom: 1rem;">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details" style="text-align: center;">
+                        <h3 style="font-family: 'Playfair Display', serif; font-size: 1.25rem; margin-bottom: 0.5rem;">Our Location</h3>
+                        <p style="font-size: 1rem; color: #555;">Bole, Ethiopian Restaurant<br>Addis Ababa</p>
+                        <a href="#" class="contact-link" style="color: #33dc12; font-weight: bold; font-size: 1rem; text-decoration: underline;">Get Directions <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="contact-item" style="min-width:220px; flex:1; background: #fff; border-radius: 1rem; box-shadow: 0 2px 12px rgba(0,0,0,0.06); padding: 2rem 1.2rem; display: flex; flex-direction: column; align-items: center; font-family: 'Inter', Arial, sans-serif;">
+                    <div class="contact-icon" style="font-size: 2.2rem; color: #d35400; margin-bottom: 1rem;">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="contact-details" style="text-align: center;">
+                        <h3 style="font-family: 'Playfair Display', serif; font-size: 1.25rem; margin-bottom: 0.5rem;">Call Us</h3>
+                        <p style="font-size: 1rem; color: #555;">+251 953813466<br>+251 951978014</p>
+                        <a href="tel:+251953813466" class="contact-link" style="color: #68eb17; font-weight: bold; font-size: 1rem; text-decoration: underline;">Call Now <i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+                <div class="contact-item" style="min-width:220px; flex:1; background: #fff; border-radius: 1rem; box-shadow: 0 2px 12px rgba(0,0,0,0.06); padding: 2rem 1.2rem; display: flex; flex-direction: column; align-items: center; font-family: 'Inter', Arial, sans-serif;">
+                    <div class="contact-icon" style="font-size: 2.2rem; color: #d35400; margin-bottom: 1rem;">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details" style="text-align: center;">
+                        <h3 style="font-family: 'Playfair Display', serif; font-size: 1.25rem; margin-bottom: 0.5rem;">Email Us</h3>
+                        <p style="font-size: 1rem; color: #555;">nuredinxos@gmail.com<br>xiostour@gmail.com</p>
+                        <a href="mailto:nuredinxos@gmail.com" class="contact-link" style="color: #33d213; font-weight: bold; font-size: 1rem; text-decoration: underline;">Send Email <i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="contact-item" style="min-width:220px; flex:1; background: #fff; border-radius: 1rem; box-shadow: 0 2px 12px rgba(0,0,0,0.06); padding: 2rem 1.2rem; display: flex; flex-direction: column; align-items: center; font-family: 'Inter', Arial, sans-serif;">
+                    <div class="contact-icon" style="font-size: 2.2rem; color: #d35400; margin-bottom: 1rem;">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="contact-details" style="text-align: center;">
+                        <h3 style="font-family: 'Playfair Display', serif; font-size: 1.25rem; margin-bottom: 0.5rem;">Business Hours</h3>
+                        <p style="font-size: 1rem; color: #555;">Mon-Fri: 11:00 AM - 10:00 PM<br>Sat-Sun: 10:00 AM - 11:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>FOODI</h3>
+                        <span class="footer-tagline">Premium Dining Experience</span>
+                    </div>
+                    
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get updates on special offers and new menu items</p>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <div class="newsletter-input">
+                            <input type="email" placeholder="Enter your email" required aria-label="Email address for newsletter">
+                            <button type="submit" aria-label="Subscribe to newsletter">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 FOODI. All Rights Reserved. </p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Quick View Modal -->
+    <div class="quick-view-modal" id="quick-view-modal" style="display:none;">
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modal-item-image" src="/placeholder.svg" alt="Food item">
+                </div>
+                <div class="modal-details">
+                    <h3 id="modal-item-name"></h3>
+                    <div class="modal-rating">
+                        <div class="stars" id="modal-item-rating"></div>
+                        <span id="modal-rating-text"></span>
+                    </div>
+                    <p id="modal-item-description">A delicious culinary experience crafted by our master chefs.</p>
+                    <div class="modal-price">
+                        <span id="modal-item-price"></span>
+                    </div>
+                    <div class="item-actions">
+                        <button class="action-btn add-to-cart-btn" id="modal-add-to-cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>Add to Cart</span>
+                        </button>
+                        <button class="action-btn order-now-btn" id="modal-order-now-btn">
+                            <i class="fas fa-bolt"></i>
+                            <span>Order Now</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <!-- Order Modal -->
+    <div class="modal" id="order-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Order Online</h3>
+                <button class="modal-close" id="close-order-modal" aria-label="Close order modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Choose your preferred ordering method:</p>
+                <div class="order-options">
+                    <a href="#" class="order-option">
+                        <i class="fas fa-globe"></i>
+                        <span>Website</span>
+                    </a>
+                    <a href="tel:+251953813466" class="order-option">
+                        <i class="fas fa-phone"></i>
+                        <span>Call to Order</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Modal -->
+    <div class="modal" id="video-modal">
+        <div class="modal-content video-modal-content">
+            <button class="modal-close" id="close-video-modal" aria-label="Close video modal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/kRCH8kD1GD0?si=6cVFuP3K8nd8GlZ6" frameborder="0" allowfullscreen title="Restaurant promotional video"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Success Toast -->
+    <div class="cart-toast" id="cart-toast" style="display:none;">
+        <div class="toast-content">
+            <i class="fas fa-check-circle"></i>
+            <span class="toast-message">Item added to cart!</span>
+        </div>
+        <div class="toast-progress"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js"></script>
+    
+</body>
+</html>
