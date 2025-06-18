@@ -72,7 +72,7 @@ This website was crafted to showcase the best of fine dining through elegant des
 
 
 
----
+--
 
 ## 📄 License
 
