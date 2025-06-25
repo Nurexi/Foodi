@@ -6,10 +6,10 @@
 
 ## 🌟 Live Preview
 👉 [Visit Website](https://foodi-7.vercel.app/) <br>
-![Screenshot (39)](https://github.com/user-attachments/assets/527f922f-984c-4f32-bf26-097fd71ce60f)
+
 
 ---
-
+![Screenshot (39)](https://github.com/user-attachments/assets/527f922f-984c-4f32-bf26-097fd71ce60f)
 
 ## 🧑‍🍳 About the Project
 
