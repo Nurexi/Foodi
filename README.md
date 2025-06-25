@@ -9,7 +9,7 @@
 ![Screenshot (39)](https://github.com/user-attachments/assets/527f922f-984c-4f32-bf26-097fd71ce60f)
 
 ---
-![Screenshot (39)](https://github.com/user-attachments/assets/02eae90c-ffab-4af3-8850-423337602322)
+
 
 ## 🧑‍🍳 About the Project
 
