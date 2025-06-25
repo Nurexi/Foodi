@@ -6,7 +6,7 @@
 
 ## 🌟 Live Preview
 👉 [Visit Website](https://foodi-7.vercel.app/)) 
-
+(images/screenshot.jpg)
 ---
 
 ## 🧑‍🍳 About the Project
