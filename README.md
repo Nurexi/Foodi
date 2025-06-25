@@ -27,8 +27,7 @@ This website was crafted to showcase the best of fine dining through elegant des
 - 💬 Smooth **scroll & navigation**
 - 🎥 Video section & media-ready components
 - 🛒 Cart button with badge (future eCommerce-ready)
-- 🧊 Glassmorphism service cards
-- 📦 Clean, modular structure 
+- 🧊 Glassmorphism service cards 
 
 ---
 
