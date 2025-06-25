@@ -5,8 +5,8 @@
 **Foodi** is a modern, responsive, and fully interactive restaurant website built with **HTML, CSS, and JavaScript**. It offers a luxurious user experience, beautiful UI, and functional features tailored for premium dining businesses.
 
 ## 🌟 Live Preview
-👉 [Visit Website](https://foodi-7.vercel.app/)) 
-(images/screenshot.jpg)
+👉 [Visit Website](https://foodi-7.vercel.app/)) <br>
+![Xos Rental Screenshot](images/screenshot.jpg)
 ---
 
 ## 🧑‍🍳 About the Project
