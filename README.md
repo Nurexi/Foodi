@@ -6,7 +6,8 @@
 
 ## 🌟 Live Preview
 👉 [Visit Website](https://foodi-7.vercel.app/)) <br>
-![Xos Rental Screenshot](images/screenshot.jpg)
+![Xos Rental Screenshot](![Screenshot (39)](https://github.com/user-attachments/assets/02eae90c-ffab-4af3-8850-423337602322)
+)
 ---
 
 ## 🧑‍🍳 About the Project
