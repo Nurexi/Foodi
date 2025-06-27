@@ -45,9 +45,10 @@ This website was crafted to showcase the best of fine dining through elegant des
 
 ## 📂 Folder Structure
 📁 Foodi
-├── index.html
-├── styles.css
-├── main.js
+├── index.html<br>
+├── index.html<br>
+├── styles.css<br>
+├── main.js<br>
 ├── /images (or directly referenced online)
 
 ---
